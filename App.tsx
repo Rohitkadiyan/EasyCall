@@ -1,11 +1,12 @@
 import { View, Text } from 'react-native';
 import React from 'react';
+import './global.css';
 
 const App = () => {
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+    <View className=" flex-1 bg-green-600">
+      < Text > App</Text >
+    </View >
   );
 };
 
