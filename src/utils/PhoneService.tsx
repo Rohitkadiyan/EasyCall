@@ -1,8 +1,4 @@
-import { PermissionsAndroid, Platform } from "react-native";
-
-
-
-
+import { PermissionsAndroid, Platform } from 'react-native';
 
 export const checkPermissions = async (CallScreeningModule: any) => {
     if (Platform.OS === 'android') {
@@ -25,5 +21,5 @@ export const checkPermissions = async (CallScreeningModule: any) => {
             console.error('Permission request failed', error);
         }
     }
-}
+};
 

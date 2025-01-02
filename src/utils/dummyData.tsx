@@ -27,6 +27,6 @@ export const callerData = [
         isSpam: false,
         fraudCount: 0
     },
-    
 
-]
+
+];

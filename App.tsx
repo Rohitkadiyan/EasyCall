@@ -1,12 +1,20 @@
-import { View, Text } from 'react-native';
-import React from 'react';
+import React, { useEffect } from 'react';
 import './global.css';
+import Navigation from './src/navigation/Navigation';
+import { NativeModules } from 'react-native';
+import { checkPermissions } from './src/utils/PhoneService';
+
+const { CallScreeningModule } = NativeModules;
 
 const App = () => {
+
+  //check Permission
+  useEffect(() => {
+    checkPermissions(CallScreeningModule);
+  }, []);
+
   return (
-    <View className=" flex-1 bg-green-600">
-      < Text > App</Text >
-    </View >
+    <Navigation />
   );
 };
 
